@@ -1,4 +1,4 @@
-.. _package-formats:
+.. formats
 
 ===============
 Package Formats
@@ -93,7 +93,7 @@ pure Python projects. Keep in mind that due to the flexibility of sdists,
 installers like pip cannot install from sdists directly -- they need to first
 build a wheel, by invoking the :term:`build backend` that the sdist specifies
 (the build backend may do all sorts of transformations while building the wheel,
-such as compiling C extensions). For this reason, even for a pure Python
+such as compiling extensions). For this reason, even for a pure Python
 project, you should always upload *both* an sdist and a wheel to PyPI or other
 package indices. This makes installation much faster for your users, since a
 wheel is directly installable. By only including files that must be installed,
